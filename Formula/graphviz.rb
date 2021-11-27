@@ -37,7 +37,8 @@ class Graphviz < Formula
 
   def install
     args = %W[
-      --disable-debug
+      --enable-debug
+      --enable-static
       --disable-dependency-tracking
       --prefix=#{prefix}
       --disable-php
